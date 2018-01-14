@@ -24,6 +24,7 @@ le fichier est créé si non existant
 
 ### instance de configuration
 obligatoire pour instancier serveur et client (application)  
+si ```$file``` est omis c'est par défaut le fichier ```/config/config.json```  
 ```$config = new Fbx($file);```
 
 ### instance du Freebox serveur

@@ -7,7 +7,7 @@ require(__DIR__.'/class/Fbx.class.php');
 $file = getcwd().'/config/config.json';
 
 // instance de configuration; obligatoire pour instancier serveur et client (application)
-$config = new Fbx($file);
+$config = new Fbx($file); //si $file est omis par défaut c'est le fichier /config/config.json
 
 // instance du Freebox serveur
 $server = new FbxServer();

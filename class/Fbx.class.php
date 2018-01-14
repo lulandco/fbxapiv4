@@ -23,9 +23,10 @@ class Fbx {
     * @param string $file Chemin du fichier de configuration json
     */
     
-    public function __construct($file) {
+    public function __construct($file=false) {
     
         if (! isset(self::$_config)) {  // empêche la création de plusieurs instances de configuration
+            $file = $file?: getcwd().'/config/config.json';
             self::$_config = new JConfig($file);
         }
         self::$_request = new Request();
